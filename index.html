@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>행운의 룰렛</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>행운의 룰렛</h1>
+      <div class="control-panel">
+        <input type="number" id="pieceCount" min="1" max="100" value="10" placeholder="조각 수 (1-55)" />
+        <button id="updatePieces">조각 수 변경</button>
+        <button id="spinButton">돌리기</button>
+        <button id="resetButton">초기화</button>
+      </div>
+      <div class="roulette-container">
+        <div class="pointer">▼</div>
+        <canvas id="rouletteCanvas"></canvas>
+      </div>
+    </div>
+    <div class="modal-backdrop"></div>
+    <div class="modal">
+      <h2>당첨 번호</h2>
+      <p id="winningNumber"></p>
+      <button id="closeModal">확인</button>
+    </div>
+    <canvas id="fireworksCanvas"></canvas>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/fireworks.js"></script>
+  </body>
+</html>
